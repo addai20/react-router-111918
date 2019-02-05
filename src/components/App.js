@@ -3,6 +3,7 @@ import '../App.css';
 import NavBar from './NavBar'
 import PaintingsList from './PaintingsList'
 import PaintingDetails from './PaintingDetails'
+import About from './About'
 
 class App extends Component {
   constructor(){
@@ -40,6 +41,7 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar title='Paintr' icon="paint brush" color="blue" subtitle="List of Paintings"/>
+        <About />
         <PaintingDetails painting={this.state.selectedPainting}/>
         <PaintingsList
           onSearchHandler={this.onSearchHandler}
